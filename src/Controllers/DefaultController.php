@@ -6,7 +6,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Slim\Http\Response;
 
 class DefaultController extends Controller {
-    public function home(ServerRequestInterface $request, Response $response){
+    public function home(Response $response){
         return $response
             ->withJson([
                 'name' => $this->container->get('app_name'),

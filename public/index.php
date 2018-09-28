@@ -11,7 +11,6 @@ require '../src/bootstrap/functions.php';
 
 $app = new \App\App();
 
-require '../src/bootstrap/middlewares.php';
 require '../src/routes.php';
 
 $app->run();

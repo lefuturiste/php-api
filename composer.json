@@ -15,8 +15,10 @@
         }
     },
     "require": {
+      "ext-json": "*",
         "slim/slim": "^3.10",
         "php-di/slim-bridge": "^2.0",
-        "vlucas/phpdotenv": "^2.5"
+        "vlucas/phpdotenv": "^2.5",
+        "tracy/tracy": "^2.5"
     }
 }

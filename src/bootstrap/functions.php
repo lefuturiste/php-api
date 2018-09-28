@@ -27,17 +27,17 @@ function di($value = 'Die and Debug ! ;)')
 
 function debug($value = 'Die and Debug ! ;)')
 {
-	return di($value);
+    return call_user_func_array("di", func_get_args());
 }
 
 function d($value = 'Die and Debug ! ;)')
 {
-	return di($value);
+    return call_user_func_array("di", func_get_args());
 }
 
 /*
 |--------------------------------------------------------------------------
-| Get environnement var and default is is null
+| Get environment var and default is is null
 |--------------------------------------------------------------------------
 */
 function envOrDefault($value, $default = NULL){
